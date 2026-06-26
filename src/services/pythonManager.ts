@@ -58,7 +58,7 @@ export interface ModelServerResponse {
 }
 
 export async function queryModelServer(
-  historyText: string,
+  historySequence: string[],
   confidence: number = 0,
   uniqueness: number = 0,
   exposure: number = 0
@@ -70,7 +70,7 @@ export async function queryModelServer(
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        historyText,
+        historySequence,
         confidence,
         uniqueness,
         exposure,

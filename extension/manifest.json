@@ -1,26 +1,25 @@
 {
   "manifest_version": 3,
-  "name": "PrivacyLens",
-  "version": "1.0",
-
+  "name": "PrivacyLens Live Network Observatory",
+  "version": "2.0.0",
+  "description": "Real-time AI privacy observatory that tracks network requests, detects data brokers, and feeds metadata to your local ML pipeline.",
   "permissions": [
+    "webRequest",
+    "storage",
     "tabs",
-    "storage"
+    "notifications",
+    "activeTab",
+    "scripting"
   ],
-
   "host_permissions": [
+    "<all_urls>",
     "http://localhost:3000/*"
   ],
-
   "background": {
     "service_worker": "background.js"
   },
-
-  "content_scripts": [
-    {
-      "matches": ["http://localhost:3000/*"],
-      "js": ["content.js"],
-      "run_at": "document_end"
-    }
-  ]
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PrivacyLens Observatory"
+  }
 }

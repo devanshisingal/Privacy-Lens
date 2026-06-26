@@ -1,0 +1,59 @@
+{
+  "amazon.com": 12,
+  "ebay.com": 9,
+  "target.com": 14,
+  "walmart.com": 15,
+  "aliexpress.com": 11,
+  "shopify.com": 6,
+  
+  "twitter.com": 8,
+  "x.com": 8,
+  "instagram.com": 10,
+  "tiktok.com": 12,
+  "facebook.com": 16,
+  "linkedin.com": 7,
+  "reddit.com": 4,
+
+  "espn.com": 13,
+  "nba.com": 11,
+  "nfl.com": 14,
+  "sports.yahoo.com": 18,
+  "bleacherreport.com": 15,
+  
+  "fidelity.com": 3,
+  "robinhood.com": 4,
+  "coinbase.com": 5,
+  "bloomberg.com": 12,
+  "chase.com": 2,
+  "paypal.com": 3,
+
+  "youtube.com": 9,
+  "netflix.com": 3,
+  "spotify.com": 4,
+  "hulu.com": 11,
+  
+  "github.com": 2,
+  "gitlab.com": 1,
+  "leetcode.com": 2,
+  "stackoverflow.com": 3,
+  "python.org": 0,
+  "rust-lang.org": 0,
+  "npmjs.com": 1,
+
+  "openai.com": 2,
+  "huggingface.co": 1,
+  "claude.ai": 1,
+  "kaggle.com": 3,
+
+  "gardeners.com": 5,
+  "almanac.com": 8,
+  "dpreview.com": 6,
+  "flickr.com": 4,
+  
+  "allrecipes.com": 17,
+  "foodnetwork.com": 19,
+  
+  "nytimes.com": 14,
+  "cnn.com": 22,
+  "wikipedia.org": 0
+}

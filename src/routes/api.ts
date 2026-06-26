@@ -1,5 +1,7 @@
 import express from 'express';
 import 'express-async-errors';
+import fs from 'fs';
+import path from 'path';
 import { ai, queryModelServer } from '../services/pythonManager';
 import {
   getUsers, addUser,
@@ -10,6 +12,14 @@ import {
 const router = express.Router();
 const DEFAULT_USER_ID = "user_devanshi1896";
 const DEFAULT_USER_EMAIL = "devanshi1896@gmail.com";
+
+const trackersPath = path.join(process.cwd(), 'backend', 'trackers.json');
+let trackerData: Record<string, number> = {};
+try {
+  trackerData = JSON.parse(fs.readFileSync(trackersPath, 'utf-8'));
+} catch (e) {
+  console.log("Could not load trackers.json");
+}
 
 const SEED_HISTORY = [
   { domain: "github.com", category: "Programming" },
@@ -23,7 +33,6 @@ const SEED_HISTORY = [
   { domain: "amazon.com", category: "Shopping" }
 ];
 
-// Offline category fallback
 function categorizeDomainOffline(domain: string): string {
   const d = domain.toLowerCase().trim();
   if (d.includes("github") || d.includes("gitlab") || d.includes("leetcode") || d.includes("hackerrank") || d.includes("stackoverflow") || d.includes("python.org") || d.includes("npmjs.com") || d.includes("rust-lang") || d.includes("aws") || d.includes("google.cloud") || d.includes("vercel")) return "Programming";
@@ -41,7 +50,6 @@ function categorizeDomainOffline(domain: string): string {
   return "General Search & News";
 }
 
-// Predict category
 async function predictCategory(domain: string): Promise<string> {
   if (!ai) return categorizeDomainOffline(domain);
   try {
@@ -74,28 +82,36 @@ Respond with ONLY the name of the category (e.g. "Programming", "AI / ML", "Soci
   }
 }
 
-// Telemetry Logic
 export async function computeTelemetry(
-  history: Array<{ category: string; domain?: string }>,
+  history: Array<{ category: string; domain?: string; timestamp?: string }>,
   userId: string = DEFAULT_USER_ID
 ) {
-  const categoriesCount: Record<string, number> = {};
-  history.forEach(item => {
-    categoriesCount[item.category] = (categoriesCount[item.category] || 0) + 1;
+  const sortedHistory = [...history].sort((a, b) => {
+     if (!a.timestamp || !b.timestamp) return 0;
+     return new Date(a.timestamp).getTime() - new Date(b.timestamp).getTime();
   });
 
-  const totalHits = history.length || 1;
-  const historyText = history.map((h: any) => h.domain || h.category).join(" ");
+  const categoriesCount: Record<string, number> = {};
+  let totalTrackers = 0;
+  
+  sortedHistory.forEach(item => {
+    categoriesCount[item.category] = (categoriesCount[item.category] || 0) + 1;
+    if (item.domain && trackerData[item.domain]) {
+      totalTrackers += trackerData[item.domain];
+    }
+  });
+
+  const totalHits = sortedHistory.length || 1;
+  const historySequence = sortedHistory.map((h: any) => h.domain || h.category);
 
   const techCount = (categoriesCount["Programming"] || 0) + (categoriesCount["AI / ML"] || 0);
   const uniquenessRatio = Math.min(1, techCount / totalHits);
   const uniqueness = Math.round((0.25 + uniquenessRatio * 0.7) * 100);
 
-  const generalCommHits = (categoriesCount["Social Media"] || 0) + (categoriesCount["Shopping"] || 0) + (categoriesCount["Entertainment"] || 0);
-  const exposureRatio = Math.min(1, (generalCommHits * 1.5 + techCount * 0.8) / totalHits);
-  const trackerExposure = Math.min(99, Math.round((0.35 + exposureRatio * 0.6) * 100));
+  // Real-world tracker exposure metric
+  const trackerExposure = Math.min(99, Math.round((totalTrackers / 50) * 100));
 
-  const modelResult = await queryModelServer(historyText, 0, uniqueness, trackerExposure);
+  const modelResult = await queryModelServer(historySequence, 0, uniqueness, trackerExposure);
 
   const interests = modelResult.interests;
   const profiles = modelResult.profiles;
@@ -110,11 +126,14 @@ export async function computeTelemetry(
   const riskScore = Math.min(99, Math.max(10, Math.round(modelResult.risk)));
   const level = riskScore > 75 ? "High" : riskScore > 40 ? "Medium" : "Low";
 
+  const rlRecommendation = modelResult.rlRecommendation || "";
+
   return {
     userId,
     interests,
     profiles,
     shapValues,
+    rlRecommendation,
     isFallback,
     risk: {
       score: riskScore,
@@ -238,9 +257,7 @@ router.post('/history', async (req, res) => {
 
 router.delete('/history/:id', async (req, res) => {
   const { id } = req.params;
-  const dbItem = getHistory("").find((h: any) => h.id === id); // SQLite doesn't have getHistoryById yet, just fetch all or filter
-  // wait, I don't need to fetch to delete, but I need userId to update prediction
-  // I will just refetch telemetry from query params or assume body userId
+  const dbItem = getHistory("").find((h: any) => h.id === id); 
   const userId = (req.query.userId as string) || (req.body.userId as string) || DEFAULT_USER_ID;
   
   deleteHistoryItem(id);
@@ -263,8 +280,8 @@ router.post('/predict/interests', async (req, res) => {
 
 router.post('/predict/profile', async (req, res) => {
   const { history } = req.body;
-  const historyText = Array.isArray(history) ? history.join(" ") : history;
-  const modelResult = await queryModelServer(historyText);
+  const historySequence = Array.isArray(history) ? history : [history];
+  const modelResult = await queryModelServer(historySequence);
   res.json({ profiles: modelResult.profiles });
 });
 
@@ -278,7 +295,7 @@ router.get('/recommendations', async (req, res) => {
   const userId = (req.query.userId as string) || DEFAULT_USER_ID;
   const state = await ensureTelemetry(userId);
   const activeProfiles = Object.entries(state.profiles || {}).sort((a: any, b: any) => b[1] - a[1]).filter((p: any) => p[1] > 0.40).map(p => p[0]);
-  const topProfiles = activeProfiles.length > 0 ? activeProfiles : ["Developer", "TechBuyer"];
+  const topProfiles = state.rlRecommendation ? [state.rlRecommendation] : (activeProfiles.length > 0 ? activeProfiles : ["Developer", "TechBuyer"]);
   res.json({ recommendations: await aiGetDecoys(topProfiles) });
 });
 
