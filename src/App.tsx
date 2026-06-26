@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useCallback } from "react";
-import { Shield, LayoutDashboard, Compass, Radio, AlertTriangle, HelpCircle, HardDriveDownload, Sparkles, RefreshCw } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { Shield, LayoutDashboard, Compass, Radio, AlertTriangle, Sparkles, RefreshCw } from "lucide-react";
 import PrivacyScore from "./components/PrivacyScore";
 import InterestChart from "./components/InterestChart";
 import AdvertiserSimulator from "./components/AdvertiserSimulator";
@@ -8,16 +9,9 @@ import AntiProfilingEngine from "./components/AntiProfilingEngine";
 import { BrowsingHistoryItem, PredictionState, DecoyRecommendation } from "./types";
 
 export default function App() {
+  const queryClient = useQueryClient();
   const [activeTab, setActiveTab] = useState<"dashboard" | "simulator" | "anti-profiling">("dashboard");
   const [userId, setUserId] = useState<string>(() => localStorage.getItem("privacylens_user_id") || "user_devanshi1896");
-  const [users, setUsers] = useState<Array<{ id: string; email: string }>>([]);
-  const [history, setHistory] = useState<BrowsingHistoryItem[]>([]);
-  const [predictions, setPredictions] = useState<PredictionState | null>(null);
-  const [recommendations, setRecommendations] = useState<DecoyRecommendation[]>([]);
-  
-  const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [isNavigating, setIsNavigating] = useState<boolean>(false);
-  const [isLoadingRecommendations, setIsLoadingRecommendations] = useState<boolean>(false);
   const [aiEnhanced, setAiEnhanced] = useState<boolean>(true);
 
   // Sync userId with localStorage
@@ -34,156 +28,104 @@ export default function App() {
       }
     };
     window.addEventListener("privacylens_id_synced", handleSync);
-    return () => {
-      window.removeEventListener("privacylens_id_synced", handleSync);
-    };
+    return () => window.removeEventListener("privacylens_id_synced", handleSync);
   }, [userId]);
 
-  // Fetch list of active users in the db
-  const fetchUsers = useCallback(async () => {
-    try {
-      const response = await fetch("/api/users");
-      const data = await response.json();
-      setUsers(data.users || []);
-    } catch (error) {
-      console.error("Error fetching users list", error);
+  // React Query: Fetch Users
+  const { data: usersData } = useQuery({
+    queryKey: ["users"],
+    queryFn: async () => {
+      const res = await fetch("/api/users");
+      return res.json();
+    },
+    refetchInterval: 3000,
+  });
+  const users = usersData?.users || [];
+
+  // React Query: Fetch Telemetry
+  const { data: telemetryData, isLoading: isLoadingTelemetry } = useQuery({
+    queryKey: ["telemetry", userId],
+    queryFn: async () => {
+      const res = await fetch(`/api/telemetry?userId=${userId}`);
+      return res.json();
+    },
+    refetchInterval: 3000,
+  });
+
+  // React Query: Fetch Recommendations
+  const { data: recommendationsData, isLoading: isLoadingRecommendations, refetch: refetchRecommendations } = useQuery({
+    queryKey: ["recommendations", userId],
+    queryFn: async () => {
+      const res = await fetch(`/api/recommendations?userId=${userId}`);
+      return res.json();
     }
-  }, []);
+  });
 
-  // Fetch telemetry state from backend for active userId
-  const fetchTelemetry = useCallback(async (uid: string) => {
-    try {
-      const response = await fetch(`/api/telemetry?userId=${uid}`);
-      const data = await response.json();
-      setHistory(data.history || []);
-      setPredictions({
-        userId: data.userId,
-        interests: data.interests || {},
-        profiles: data.profiles || {},
-        shapValues: data.shapValues || {},
-        risk: data.risk || { score: 10, level: "Low", confidence: 10, uniqueness: 10, trackerExposure: 10 }
-      });
-    } catch (error) {
-      console.error("Error fetching telemetry", error);
-    }
-  }, []);
-
-  // Fetch decoy recommendations for active userId
-  const fetchRecommendations = useCallback(async (uid: string) => {
-    setIsLoadingRecommendations(true);
-    try {
-      const response = await fetch(`/api/recommendations?userId=${uid}`);
-      const data = await response.json();
-      setRecommendations(data.recommendations || []);
-    } catch (error) {
-      console.error("Error fetching recommendations", error);
-    } finally {
-      setIsLoadingRecommendations(false);
-    }
-  }, []);
-
-  // Set up initial load
-  useEffect(() => {
-    const init = async () => {
-      setIsLoading(true);
-      await fetchUsers();
-      await fetchTelemetry(userId);
-      await fetchRecommendations(userId);
-      setIsLoading(false);
-    };
-    init();
-  }, [userId, fetchTelemetry, fetchRecommendations, fetchUsers]);
-
-  // Real-time polling
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (document.visibilityState === "visible") {
-        fetchTelemetry(userId);
-        fetchUsers();
-      }
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [userId, fetchTelemetry, fetchUsers]);
-
-  // Navigate simulated active tab URL
-  const handleNavigate = async (domain: string) => {
-    setIsNavigating(true);
-    try {
-      const response = await fetch("/api/history", {
+  // Mutations
+  const navigateMutation = useMutation({
+    mutationFn: async (domain: string) => {
+      const res = await fetch("/api/history", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ domain, userId }),
       });
-      const data = await response.json();
-      
-      // Update local states
-      if (data.item) {
-        setHistory((prev) => [data.item, ...prev]);
-      }
-      if (data.predictions) {
-        setPredictions({
-          userId: data.predictions.userId,
-          interests: data.predictions.interests || {},
-          profiles: data.predictions.profiles || {},
-          shapValues: data.predictions.shapValues || {},
-          risk: data.predictions.risk || predictions?.risk
-        });
-      }
-      await fetchUsers();
-    } catch (error) {
-      console.error("Navigation error", error);
-    } finally {
-      setIsNavigating(false);
-    }
-  };
+      return res.json();
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["telemetry", userId] });
+      queryClient.invalidateQueries({ queryKey: ["users"] });
+    },
+  });
 
-  // Delete a specific tracking line
-  const handleDeleteItem = async (id: string) => {
-    try {
-      const response = await fetch(`/api/history/${id}`, {
-        method: "DELETE",
-      });
-      const data = await response.json();
-      
-      setHistory((prev) => prev.filter((item) => item.id !== id));
-      if (data.predictions) {
-        setPredictions({
-          userId: data.predictions.userId,
-          interests: data.predictions.interests || {},
-          profiles: data.predictions.profiles || {},
-          shapValues: data.predictions.shapValues || {},
-          risk: data.predictions.risk
-        });
-      }
-    } catch (error) {
-      console.error("Delete history error", error);
-    }
-  };
+  const deleteHistoryMutation = useMutation({
+    mutationFn: async (id: string) => {
+      const res = await fetch(`/api/history/${id}?userId=${userId}`, { method: "DELETE" });
+      return res.json();
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["telemetry", userId] });
+    },
+  });
 
-  // Reset sandbox to baseline seeds
-  const handleResetDB = async () => {
-    try {
-      const response = await fetch("/api/reset", {
+  const resetDBMutation = useMutation({
+    mutationFn: async () => {
+      const res = await fetch("/api/reset", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userId })
       });
-      const data = await response.json();
-      setHistory(data.history || []);
-      if (data.predictions) {
-        setPredictions({
-          userId: data.predictions.userId,
-          interests: data.predictions.interests || {},
-          profiles: data.predictions.profiles || {},
-          shapValues: data.predictions.shapValues || {},
-          risk: data.predictions.risk
-        });
-      }
-      await fetchRecommendations(userId);
-    } catch (error) {
-      console.error("Reset DB error", error);
-    }
+      return res.json();
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["telemetry", userId] });
+      queryClient.invalidateQueries({ queryKey: ["recommendations", userId] });
+    },
+  });
+
+  const handleNavigate = async (domain: string) => {
+    navigateMutation.mutate(domain);
   };
+
+  const handleDeleteItem = async (id: string) => {
+    deleteHistoryMutation.mutate(id);
+  };
+
+  const handleResetDB = async () => {
+    resetDBMutation.mutate();
+  };
+
+  const history: BrowsingHistoryItem[] = telemetryData?.history || [];
+  const predictions: PredictionState | null = telemetryData ? {
+    userId: telemetryData.userId,
+    interests: telemetryData.interests || {},
+    profiles: telemetryData.profiles || {},
+    shapValues: telemetryData.shapValues || {},
+    risk: telemetryData.risk || { score: 10, level: "Low", confidence: 10, uniqueness: 10, trackerExposure: 10 }
+  } : null;
+  const isFallback = telemetryData?.isFallback;
+  const recommendations: DecoyRecommendation[] = recommendationsData?.recommendations || [];
+  const isLoading = isLoadingTelemetry;
+  const isNavigating = navigateMutation.isPending;
 
   return (
     <div className="min-h-screen bg-[#0b0c10] text-[#c5c6c7] font-sans flex flex-col antialiased">
@@ -255,12 +197,12 @@ export default function App() {
                 onChange={(e) => setUserId(e.target.value)}
                 className="bg-[#161a25] border border-gray-800 text-xs font-semibold text-white px-3 py-1.5 rounded-xl focus:border-indigo-500/50 outline-none cursor-pointer hover:bg-[#1c2230] transition-all"
               >
-                {users.map(u => (
+                {users.map((u: any) => (
                   <option key={u.id} value={u.id}>
                     {u.id === "user_devanshi1896" ? "Devanshi (Seed Demo)" : u.id}
                   </option>
                 ))}
-                {!users.find(u => u.id === userId) && (
+                {!users.find((u: any) => u.id === userId) && (
                   <option value={userId}>{userId} (Active Session)</option>
                 )}
               </select>
@@ -286,8 +228,11 @@ export default function App() {
           <div className="flex items-start gap-3">
             <AlertTriangle className="text-yellow-500 shrink-0 mt-0.5" size={18} />
             <div>
-              <p className="text-xs font-bold text-white font-sans">
+              <p className="text-xs font-bold text-white font-sans flex items-center gap-2">
                 Active Tracking Footprint Detected for <span className="text-indigo-300 font-mono">{userId === "user_devanshi1896" ? "devanshi1896@gmail.com" : `${userId}@privacylens.local`}</span>
+                {isFallback && (
+                   <span className="bg-red-900/30 text-red-400 text-[10px] px-1.5 py-0.5 rounded font-bold uppercase tracking-wide border border-red-800/50">Fallback Model</span>
+                )}
               </p>
               <p className="text-[11px] text-gray-400 font-sans mt-0.5 leading-relaxed">
                 Ad routers have aggregated your footprint clusters across {history.length} distinct domains. Your metadata contains heavily categorized corporate bias.
@@ -297,9 +242,10 @@ export default function App() {
           <div className="flex gap-2 shrink-0">
             <button
               onClick={handleResetDB}
-              className="bg-[#1f2436] hover:bg-[#282f45] border border-gray-800 text-[11px] font-bold text-gray-300 py-1.5 px-3 rounded-lg transition-all flex items-center gap-1.5 font-sans"
+              disabled={resetDBMutation.isPending}
+              className="bg-[#1f2436] hover:bg-[#282f45] border border-gray-800 text-[11px] font-bold text-gray-300 py-1.5 px-3 rounded-lg transition-all flex items-center gap-1.5 font-sans disabled:opacity-50"
             >
-              <RefreshCw size={12} className="text-gray-400" />
+              <RefreshCw size={12} className={`text-gray-400 ${resetDBMutation.isPending ? 'animate-spin' : ''}`} />
               Re-seed Historical Logs
             </button>
           </div>
@@ -358,7 +304,7 @@ export default function App() {
               <AntiProfilingEngine
                 recommendations={recommendations}
                 onTriggerDecoy={handleNavigate}
-                onRefreshRecommendations={fetchRecommendations}
+                onRefreshRecommendations={() => refetchRecommendations()}
                 isLoading={isLoadingRecommendations}
               />
             )}

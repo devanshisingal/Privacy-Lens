@@ -3,8 +3,8 @@ from "./noise_categories";
 
 export function
 findBestNoise(
-    historyText,
-    predictProfile
+    historyText: string,
+    predictProfile: (text: string) => Record<string, number>
 ){
 
  let bestCategory = "";

@@ -9,7 +9,7 @@
       "id": "user_new_test_123",
       "email": "user_new_test_123@privacylens.local",
       "createdAt": "2026-06-13T07:03:42.966Z"
-    },     
+    },
     {
       "id": "user_pty84f9519",
       "email": "user_pty84f9519@privacylens.local",
@@ -168,118 +168,6 @@
       "timestamp": "2026-06-13T07:21:58.118Z"
     },
     {
-      "id": "h_ibawt9t",
-      "userId": "user_devanshi1896",
-      "domain": "gardeners.com",
-      "category": "Gardening",
-      "timestamp": "2026-06-10T20:14:14.198Z"
-    },
-    {
-      "id": "h_bvq235q",
-      "userId": "user_devanshi1896",
-      "domain": "gardeners.com",
-      "category": "Gardening",
-      "timestamp": "2026-06-10T20:12:28.127Z"
-    },
-    {
-      "id": "h_j21u6so",
-      "userId": "user_devanshi1896",
-      "domain": "almanac.com",
-      "category": "General Search & News",
-      "timestamp": "2026-06-10T20:08:42.576Z"
-    },
-    {
-      "id": "h_jzjefty",
-      "userId": "user_devanshi1896",
-      "domain": "gardeners.com",
-      "category": "Gardening",
-      "timestamp": "2026-06-10T20:06:00.840Z"
-    },
-    {
-      "id": "h_h2zuelk",
-      "userId": "user_devanshi1896",
-      "domain": "gardeners.com",
-      "category": "Gardening",
-      "timestamp": "2026-06-10T20:02:51.754Z"
-    },
-    {
-      "id": "h_ds2ogdi",
-      "userId": "user_devanshi1896",
-      "domain": "almanac.com",
-      "category": "General Search & News",
-      "timestamp": "2026-06-10T20:02:08.134Z"
-    },
-    {
-      "id": "h_lmungoy",
-      "userId": "user_devanshi1896",
-      "domain": "netflix.com",
-      "category": "Entertainment",
-      "timestamp": "2026-06-10T20:00:57.761Z"
-    },
-    {
-      "id": "h1",
-      "userId": "user_devanshi1896",
-      "domain": "github.com",
-      "category": "Programming",
-      "timestamp": "2026-06-10T11:50:13.422Z"
-    },
-    {
-      "id": "h2",
-      "userId": "user_devanshi1896",
-      "domain": "leetcode.com",
-      "category": "Programming",
-      "timestamp": "2026-06-10T12:50:13.422Z"
-    },
-    {
-      "id": "h3",
-      "userId": "user_devanshi1896",
-      "domain": "stackoverflow.com",
-      "category": "Programming",
-      "timestamp": "2026-06-10T13:50:13.422Z"
-    },
-    {
-      "id": "h4",
-      "userId": "user_devanshi1896",
-      "domain": "python.org",
-      "category": "Programming",
-      "timestamp": "2026-06-10T14:50:13.422Z"
-    },
-    {
-      "id": "h5",
-      "userId": "user_devanshi1896",
-      "domain": "openai.com",
-      "category": "AI / ML",
-      "timestamp": "2026-06-10T15:20:13.422Z"
-    },
-    {
-      "id": "h6",
-      "userId": "user_devanshi1896",
-      "domain": "huggingface.co",
-      "category": "AI / ML",
-      "timestamp": "2026-06-10T15:50:13.422Z"
-    },
-    {
-      "id": "h7",
-      "userId": "user_devanshi1896",
-      "domain": "espn.com",
-      "category": "Sports",
-      "timestamp": "2026-06-10T16:50:13.422Z"
-    },
-    {
-      "id": "h8",
-      "userId": "user_devanshi1896",
-      "domain": "netflix.com",
-      "category": "Entertainment",
-      "timestamp": "2026-06-10T17:50:13.422Z"
-    },
-    {
-      "id": "h9",
-      "userId": "user_devanshi1896",
-      "domain": "amazon.com",
-      "category": "Shopping",
-      "timestamp": "2026-06-10T18:50:13.422Z"
-    },
-    {
       "id": "h_4fratfy",
       "userId": "user_new_test_123",
       "domain": "github.com",
@@ -404,24 +292,87 @@
       "domain": "amazon.com",
       "category": "Shopping",
       "timestamp": "2026-06-12T23:36:17.945Z"
+    },
+    {
+      "id": "h_eslt948",
+      "userId": "user_devanshi1896",
+      "domain": "github.com",
+      "category": "Programming",
+      "timestamp": "2026-06-26T09:14:11.120Z"
+    },
+    {
+      "id": "h_9ly33fp",
+      "userId": "user_devanshi1896",
+      "domain": "leetcode.com",
+      "category": "Programming",
+      "timestamp": "2026-06-26T08:14:11.120Z"
+    },
+    {
+      "id": "h_2y99rj0",
+      "userId": "user_devanshi1896",
+      "domain": "stackoverflow.com",
+      "category": "Programming",
+      "timestamp": "2026-06-26T07:14:11.120Z"
+    },
+    {
+      "id": "h_5g9ndsh",
+      "userId": "user_devanshi1896",
+      "domain": "python.org",
+      "category": "Programming",
+      "timestamp": "2026-06-26T06:14:11.120Z"
+    },
+    {
+      "id": "h_r8btkb4",
+      "userId": "user_devanshi1896",
+      "domain": "openai.com",
+      "category": "AI / ML",
+      "timestamp": "2026-06-26T05:14:11.120Z"
+    },
+    {
+      "id": "h_ud6o6en",
+      "userId": "user_devanshi1896",
+      "domain": "huggingface.co",
+      "category": "AI / ML",
+      "timestamp": "2026-06-26T04:14:11.120Z"
+    },
+    {
+      "id": "h_bauzkos",
+      "userId": "user_devanshi1896",
+      "domain": "espn.com",
+      "category": "Sports",
+      "timestamp": "2026-06-26T03:14:11.120Z"
+    },
+    {
+      "id": "h_5jcyqhv",
+      "userId": "user_devanshi1896",
+      "domain": "netflix.com",
+      "category": "Entertainment",
+      "timestamp": "2026-06-26T02:14:11.120Z"
+    },
+    {
+      "id": "h_j4ph3pc",
+      "userId": "user_devanshi1896",
+      "domain": "amazon.com",
+      "category": "Shopping",
+      "timestamp": "2026-06-26T01:14:11.120Z"
     }
   ],
   "predictions": {
     "user_devanshi1896": {
       "userId": "user_devanshi1896",
       "interests": {
-        "AI / ML": 0.14,
-        "Cooking": 0.0596,
-        "Entertainment": 0.0775,
-        "Finance": 0.0596,
-        "Gaming": 0.1095,
-        "Gardening": 0.0596,
-        "Photography": 0.0596,
-        "Programming": 0.1791,
-        "Shopping": 0.068,
-        "Social Media": 0.0596,
-        "Sports": 0.068,
-        "Travel": 0.0596
+        "AI / ML": 0.1432,
+        "Cooking": 0.0589,
+        "Entertainment": 0.0685,
+        "Finance": 0.0589,
+        "Gaming": 0.1078,
+        "Gardening": 0.0589,
+        "Photography": 0.0589,
+        "Programming": 0.1903,
+        "Shopping": 0.0685,
+        "Social Media": 0.0589,
+        "Sports": 0.0685,
+        "Travel": 0.0589
       },
       "profiles": {
         "CryptoEnthusiast": 0.05,
@@ -686,11 +637,11 @@
         ]
       },
       "risk": {
-        "score": 53,
+        "score": 65,
         "level": "Medium",
         "confidence": 40,
-        "uniqueness": 51,
-        "trackerExposure": 70
+        "uniqueness": 72,
+        "trackerExposure": 87
       }
     },
     "user_new_test_123": {
