@@ -1,0 +1,1841 @@
+{
+  "users": [
+    {
+      "id": "user_devanshi1896",
+      "email": "devanshi1896@gmail.com",
+      "createdAt": "2026-06-10T10:57:04.494Z"
+    },
+    {
+      "id": "user_new_test_123",
+      "email": "user_new_test_123@privacylens.local",
+      "createdAt": "2026-06-13T07:03:42.966Z"
+    },
+    {
+      "id": "user_pty84f9519",
+      "email": "user_pty84f9519@privacylens.local",
+      "createdAt": "2026-06-13T07:11:24.577Z"
+    },
+    {
+      "id": "user_flyh6sbc7ul",
+      "email": "user_flyh6sbc7ul@privacylens.local",
+      "createdAt": "2026-06-13T07:21:58.118Z"
+    },
+    {
+      "id": "user_hdb1iaeapc",
+      "email": "user_hdb1iaeapc@privacylens.local",
+      "createdAt": "2026-06-13T07:35:14.198Z"
+    }
+  ],
+  "history": [
+    {
+      "id": "h_uz8dk08",
+      "userId": "user_hdb1iaeapc",
+      "domain": "0.0.0.0",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:36:38.175Z"
+    },
+    {
+      "id": "h_b2kzpc5",
+      "userId": "user_hdb1iaeapc",
+      "domain": "0.0.0.0",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:35:48.903Z"
+    },
+    {
+      "id": "h_dsbdwod",
+      "userId": "user_hdb1iaeapc",
+      "domain": "0.0.0.0",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:35:14.198Z"
+    },
+    {
+      "id": "h_fc1e82z",
+      "userId": "user_flyh6sbc7ul",
+      "domain": "0.0.0.0",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:23:19.185Z"
+    },
+    {
+      "id": "h_859iqu2",
+      "userId": "user_flyh6sbc7ul",
+      "domain": "amazon.in",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:22:59.586Z"
+    },
+    {
+      "id": "h_q2gbzvj",
+      "userId": "user_flyh6sbc7ul",
+      "domain": "youtube.com",
+      "category": "Entertainment",
+      "timestamp": "2026-06-13T07:22:50.708Z"
+    },
+    {
+      "id": "h_n3czcu7",
+      "userId": "user_flyh6sbc7ul",
+      "domain": "0.0.0.0",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:22:41.904Z"
+    },
+    {
+      "id": "h_2jk8cfs",
+      "userId": "user_flyh6sbc7ul",
+      "domain": "0.0.0.0",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:22:41.767Z"
+    },
+    {
+      "id": "h_kif20ag",
+      "userId": "user_flyh6sbc7ul",
+      "domain": "0.0.0.0",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:22:41.369Z"
+    },
+    {
+      "id": "h_izuvsst",
+      "userId": "user_flyh6sbc7ul",
+      "domain": "0.0.0.0",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:22:40.603Z"
+    },
+    {
+      "id": "h_4ue7dbo",
+      "userId": "user_flyh6sbc7ul",
+      "domain": "0.0.0.0",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:22:39.698Z"
+    },
+    {
+      "id": "h_a501hs9",
+      "userId": "user_flyh6sbc7ul",
+      "domain": "0.0.0.0",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:22:39.103Z"
+    },
+    {
+      "id": "h_5sl4c3r",
+      "userId": "user_flyh6sbc7ul",
+      "domain": "0.0.0.0",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:22:38.158Z"
+    },
+    {
+      "id": "h_oozqto4",
+      "userId": "user_flyh6sbc7ul",
+      "domain": "0.0.0.0",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:22:37.252Z"
+    },
+    {
+      "id": "h_pdydclm",
+      "userId": "user_flyh6sbc7ul",
+      "domain": "google.com",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:22:10.484Z"
+    },
+    {
+      "id": "h_teta71m",
+      "userId": "user_flyh6sbc7ul",
+      "domain": "0.0.0.0",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:22:00.773Z"
+    },
+    {
+      "id": "h_8o2cmtz",
+      "userId": "user_flyh6sbc7ul",
+      "domain": "0.0.0.0",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:22:00.449Z"
+    },
+    {
+      "id": "h_twplgce",
+      "userId": "user_flyh6sbc7ul",
+      "domain": "0.0.0.0",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:22:00.076Z"
+    },
+    {
+      "id": "h_c9iiha8",
+      "userId": "user_flyh6sbc7ul",
+      "domain": "0.0.0.0",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:21:59.341Z"
+    },
+    {
+      "id": "h_o0smmb9",
+      "userId": "user_flyh6sbc7ul",
+      "domain": "0.0.0.0",
+      "category": "General Search & News",
+      "timestamp": "2026-06-13T07:21:58.118Z"
+    },
+    {
+      "id": "h_ibawt9t",
+      "userId": "user_devanshi1896",
+      "domain": "gardeners.com",
+      "category": "Gardening",
+      "timestamp": "2026-06-10T20:14:14.198Z"
+    },
+    {
+      "id": "h_bvq235q",
+      "userId": "user_devanshi1896",
+      "domain": "gardeners.com",
+      "category": "Gardening",
+      "timestamp": "2026-06-10T20:12:28.127Z"
+    },
+    {
+      "id": "h_j21u6so",
+      "userId": "user_devanshi1896",
+      "domain": "almanac.com",
+      "category": "General Search & News",
+      "timestamp": "2026-06-10T20:08:42.576Z"
+    },
+    {
+      "id": "h_jzjefty",
+      "userId": "user_devanshi1896",
+      "domain": "gardeners.com",
+      "category": "Gardening",
+      "timestamp": "2026-06-10T20:06:00.840Z"
+    },
+    {
+      "id": "h_h2zuelk",
+      "userId": "user_devanshi1896",
+      "domain": "gardeners.com",
+      "category": "Gardening",
+      "timestamp": "2026-06-10T20:02:51.754Z"
+    },
+    {
+      "id": "h_ds2ogdi",
+      "userId": "user_devanshi1896",
+      "domain": "almanac.com",
+      "category": "General Search & News",
+      "timestamp": "2026-06-10T20:02:08.134Z"
+    },
+    {
+      "id": "h_lmungoy",
+      "userId": "user_devanshi1896",
+      "domain": "netflix.com",
+      "category": "Entertainment",
+      "timestamp": "2026-06-10T20:00:57.761Z"
+    },
+    {
+      "id": "h1",
+      "userId": "user_devanshi1896",
+      "domain": "github.com",
+      "category": "Programming",
+      "timestamp": "2026-06-10T11:50:13.422Z"
+    },
+    {
+      "id": "h2",
+      "userId": "user_devanshi1896",
+      "domain": "leetcode.com",
+      "category": "Programming",
+      "timestamp": "2026-06-10T12:50:13.422Z"
+    },
+    {
+      "id": "h3",
+      "userId": "user_devanshi1896",
+      "domain": "stackoverflow.com",
+      "category": "Programming",
+      "timestamp": "2026-06-10T13:50:13.422Z"
+    },
+    {
+      "id": "h4",
+      "userId": "user_devanshi1896",
+      "domain": "python.org",
+      "category": "Programming",
+      "timestamp": "2026-06-10T14:50:13.422Z"
+    },
+    {
+      "id": "h5",
+      "userId": "user_devanshi1896",
+      "domain": "openai.com",
+      "category": "AI / ML",
+      "timestamp": "2026-06-10T15:20:13.422Z"
+    },
+    {
+      "id": "h6",
+      "userId": "user_devanshi1896",
+      "domain": "huggingface.co",
+      "category": "AI / ML",
+      "timestamp": "2026-06-10T15:50:13.422Z"
+    },
+    {
+      "id": "h7",
+      "userId": "user_devanshi1896",
+      "domain": "espn.com",
+      "category": "Sports",
+      "timestamp": "2026-06-10T16:50:13.422Z"
+    },
+    {
+      "id": "h8",
+      "userId": "user_devanshi1896",
+      "domain": "netflix.com",
+      "category": "Entertainment",
+      "timestamp": "2026-06-10T17:50:13.422Z"
+    },
+    {
+      "id": "h9",
+      "userId": "user_devanshi1896",
+      "domain": "amazon.com",
+      "category": "Shopping",
+      "timestamp": "2026-06-10T18:50:13.422Z"
+    },
+    {
+      "id": "h_4fratfy",
+      "userId": "user_new_test_123",
+      "domain": "github.com",
+      "category": "Programming",
+      "timestamp": "2026-06-13T07:03:42.966Z"
+    },
+    {
+      "id": "h_peu6s5s",
+      "userId": "user_new_test_123",
+      "domain": "leetcode.com",
+      "category": "Programming",
+      "timestamp": "2026-06-13T06:03:42.966Z"
+    },
+    {
+      "id": "h_bep4ive",
+      "userId": "user_new_test_123",
+      "domain": "stackoverflow.com",
+      "category": "Programming",
+      "timestamp": "2026-06-13T05:03:42.966Z"
+    },
+    {
+      "id": "h_8f5qidi",
+      "userId": "user_new_test_123",
+      "domain": "python.org",
+      "category": "Programming",
+      "timestamp": "2026-06-13T04:03:42.966Z"
+    },
+    {
+      "id": "h_31eqmjs",
+      "userId": "user_new_test_123",
+      "domain": "openai.com",
+      "category": "AI / ML",
+      "timestamp": "2026-06-13T03:03:42.966Z"
+    },
+    {
+      "id": "h_q1dnb87",
+      "userId": "user_new_test_123",
+      "domain": "huggingface.co",
+      "category": "AI / ML",
+      "timestamp": "2026-06-13T02:03:42.966Z"
+    },
+    {
+      "id": "h_3hpohzl",
+      "userId": "user_new_test_123",
+      "domain": "espn.com",
+      "category": "Sports",
+      "timestamp": "2026-06-13T01:03:42.966Z"
+    },
+    {
+      "id": "h_24sosjh",
+      "userId": "user_new_test_123",
+      "domain": "netflix.com",
+      "category": "Entertainment",
+      "timestamp": "2026-06-13T00:03:42.966Z"
+    },
+    {
+      "id": "h_0crjvjl",
+      "userId": "user_new_test_123",
+      "domain": "amazon.com",
+      "category": "Shopping",
+      "timestamp": "2026-06-12T23:03:42.966Z"
+    },
+    {
+      "id": "h_ua4j75t",
+      "userId": "user_pty84f9519",
+      "domain": "github.com",
+      "category": "Programming",
+      "timestamp": "2026-06-13T07:36:17.945Z"
+    },
+    {
+      "id": "h_ikaf6by",
+      "userId": "user_pty84f9519",
+      "domain": "leetcode.com",
+      "category": "Programming",
+      "timestamp": "2026-06-13T06:36:17.945Z"
+    },
+    {
+      "id": "h_lt8xrxx",
+      "userId": "user_pty84f9519",
+      "domain": "stackoverflow.com",
+      "category": "Programming",
+      "timestamp": "2026-06-13T05:36:17.945Z"
+    },
+    {
+      "id": "h_60gt9ag",
+      "userId": "user_pty84f9519",
+      "domain": "python.org",
+      "category": "Programming",
+      "timestamp": "2026-06-13T04:36:17.945Z"
+    },
+    {
+      "id": "h_xadb5wl",
+      "userId": "user_pty84f9519",
+      "domain": "openai.com",
+      "category": "AI / ML",
+      "timestamp": "2026-06-13T03:36:17.945Z"
+    },
+    {
+      "id": "h_y7voik4",
+      "userId": "user_pty84f9519",
+      "domain": "huggingface.co",
+      "category": "AI / ML",
+      "timestamp": "2026-06-13T02:36:17.945Z"
+    },
+    {
+      "id": "h_ckeuyjz",
+      "userId": "user_pty84f9519",
+      "domain": "espn.com",
+      "category": "Sports",
+      "timestamp": "2026-06-13T01:36:17.945Z"
+    },
+    {
+      "id": "h_w8alp3r",
+      "userId": "user_pty84f9519",
+      "domain": "netflix.com",
+      "category": "Entertainment",
+      "timestamp": "2026-06-13T00:36:17.945Z"
+    },
+    {
+      "id": "h_s5sedhn",
+      "userId": "user_pty84f9519",
+      "domain": "amazon.com",
+      "category": "Shopping",
+      "timestamp": "2026-06-12T23:36:17.945Z"
+    }
+  ],
+  "predictions": {
+    "user_devanshi1896": {
+      "userId": "user_devanshi1896",
+      "interests": {
+        "AI / ML": 0.14,
+        "Cooking": 0.0596,
+        "Entertainment": 0.0775,
+        "Finance": 0.0596,
+        "Gaming": 0.1095,
+        "Gardening": 0.0596,
+        "Photography": 0.0596,
+        "Programming": 0.1791,
+        "Shopping": 0.068,
+        "Social Media": 0.0596,
+        "Sports": 0.068,
+        "Travel": 0.0596
+      },
+      "profiles": {
+        "CryptoEnthusiast": 0.05,
+        "Developer": 0.6,
+        "Gamer": 0.02,
+        "LifestyleBuyer": 0.04,
+        "Student": 0.19,
+        "TechBuyer": 0.1
+      },
+      "shapValues": {
+        "CryptoEnthusiast": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "Developer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "Gamer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "LifestyleBuyer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "Student": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "TechBuyer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ]
+      },
+      "risk": {
+        "score": 53,
+        "level": "Medium",
+        "confidence": 40,
+        "uniqueness": 51,
+        "trackerExposure": 70
+      }
+    },
+    "user_new_test_123": {
+      "userId": "user_new_test_123",
+      "interests": {
+        "AI / ML": 0.1432,
+        "Cooking": 0.0589,
+        "Entertainment": 0.0685,
+        "Finance": 0.0589,
+        "Gaming": 0.1078,
+        "Gardening": 0.0589,
+        "Photography": 0.0589,
+        "Programming": 0.1903,
+        "Shopping": 0.0685,
+        "Social Media": 0.0589,
+        "Sports": 0.0685,
+        "Travel": 0.0589
+      },
+      "profiles": {
+        "CryptoEnthusiast": 0.05,
+        "Developer": 0.6,
+        "Gamer": 0.02,
+        "LifestyleBuyer": 0.04,
+        "Student": 0.19,
+        "TechBuyer": 0.1
+      },
+      "shapValues": {
+        "CryptoEnthusiast": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "Developer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "Gamer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "LifestyleBuyer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "Student": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "TechBuyer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ]
+      },
+      "risk": {
+        "score": 65,
+        "level": "Medium",
+        "confidence": 40,
+        "uniqueness": 72,
+        "trackerExposure": 87
+      }
+    },
+    "user_pty84f9519": {
+      "userId": "user_pty84f9519",
+      "interests": {
+        "AI / ML": 0.1432,
+        "Cooking": 0.0589,
+        "Entertainment": 0.0685,
+        "Finance": 0.0589,
+        "Gaming": 0.1078,
+        "Gardening": 0.0589,
+        "Photography": 0.0589,
+        "Programming": 0.1903,
+        "Shopping": 0.0685,
+        "Social Media": 0.0589,
+        "Sports": 0.0685,
+        "Travel": 0.0589
+      },
+      "profiles": {
+        "CryptoEnthusiast": 0.05,
+        "Developer": 0.6,
+        "Gamer": 0.02,
+        "LifestyleBuyer": 0.04,
+        "Student": 0.19,
+        "TechBuyer": 0.1
+      },
+      "shapValues": {
+        "CryptoEnthusiast": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "Developer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "Gamer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "LifestyleBuyer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "Student": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "TechBuyer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ]
+      },
+      "risk": {
+        "score": 65,
+        "level": "Medium",
+        "confidence": 40,
+        "uniqueness": 72,
+        "trackerExposure": 87
+      }
+    },
+    "user_flyh6sbc7ul": {
+      "userId": "user_flyh6sbc7ul",
+      "interests": {
+        "AI / ML": 0.1231,
+        "Cooking": 0.0646,
+        "Entertainment": 0.0891,
+        "Finance": 0.0646,
+        "Gaming": 0.1231,
+        "Gardening": 0.0646,
+        "Photography": 0.0646,
+        "Programming": 0.1231,
+        "Shopping": 0.0891,
+        "Social Media": 0.0646,
+        "Sports": 0.0646,
+        "Travel": 0.0646
+      },
+      "profiles": {
+        "CryptoEnthusiast": 0.11,
+        "Developer": 0.12,
+        "Gamer": 0.1,
+        "LifestyleBuyer": 0.11,
+        "Student": 0.31,
+        "TechBuyer": 0.25
+      },
+      "shapValues": {
+        "CryptoEnthusiast": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "Developer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "Gamer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "LifestyleBuyer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "Student": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "TechBuyer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ]
+      },
+      "risk": {
+        "score": 30,
+        "level": "Low",
+        "confidence": 28,
+        "uniqueness": 25,
+        "trackerExposure": 40
+      }
+    },
+    "user_hdb1iaeapc": {
+      "userId": "user_hdb1iaeapc",
+      "interests": {
+        "AI / ML": 0.1325,
+        "Cooking": 0.0669,
+        "Entertainment": 0.0669,
+        "Finance": 0.0669,
+        "Gaming": 0.1325,
+        "Gardening": 0.0669,
+        "Photography": 0.0669,
+        "Programming": 0.1325,
+        "Shopping": 0.0669,
+        "Social Media": 0.0669,
+        "Sports": 0.0669,
+        "Travel": 0.0669
+      },
+      "profiles": {
+        "CryptoEnthusiast": 0.17,
+        "Developer": 0.21,
+        "Gamer": 0.15,
+        "LifestyleBuyer": 0.17,
+        "Student": 0.14,
+        "TechBuyer": 0.16
+      },
+      "shapValues": {
+        "CryptoEnthusiast": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "Developer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "Gamer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "LifestyleBuyer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "Student": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ],
+        "TechBuyer": [
+          {
+            "feature": "xbox",
+            "impact": 0.034
+          },
+          {
+            "feature": "cooking",
+            "impact": 0.0299
+          },
+          {
+            "feature": "defi",
+            "impact": 0.0295
+          },
+          {
+            "feature": "youtube",
+            "impact": 0.0293
+          },
+          {
+            "feature": "reels",
+            "impact": 0.029
+          },
+          {
+            "feature": "react",
+            "impact": 0.0284
+          },
+          {
+            "feature": "memes",
+            "impact": 0.0279
+          },
+          {
+            "feature": "flights",
+            "impact": 0.0277
+          },
+          {
+            "feature": "gadgets",
+            "impact": 0.0276
+          },
+          {
+            "feature": "huggingface",
+            "impact": 0.0268
+          }
+        ]
+      },
+      "risk": {
+        "score": 27,
+        "level": "Low",
+        "confidence": 19,
+        "uniqueness": 25,
+        "trackerExposure": 35
+      }
+    }
+  }
+}

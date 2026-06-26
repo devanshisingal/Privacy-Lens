@@ -1,0 +1,6 @@
+{
+  "name": "PrivacyLens",
+  "description": "Analyze browsing data to predict your digital tracking profile, calculate privacy risk, simulate advertiser audiences, and generate anti-profiling decoy browsing recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
