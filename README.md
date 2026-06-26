@@ -211,3 +211,17 @@ PrivacyLens demonstrates strong skills in:
 ## 📌 Repository
 
 GitHub: https://github.com/devanshisingal/Privacy-Lens
+
+---
+
+## Walkthrough 
+
+<img width="1686" height="838" alt="Screenshot 2026-06-10 190946" src="https://github.com/user-attachments/assets/48a1aa62-0713-4e5a-b333-7d64aa1f216c" />
+
+<img width="1522" height="682" alt="Screenshot 2026-06-10 191102" src="https://github.com/user-attachments/assets/bd707fb4-aa7f-40d0-9a8f-653b7b600baa" />
+
+<img width="1601" height="717" alt="Screenshot 2026-06-10 191151" src="https://github.com/user-attachments/assets/b7ba2196-684b-40bd-8630-475bef1cc06e" />
+
+<img width="1728" height="873" alt="Screenshot 2026-06-10 191213" src="https://github.com/user-attachments/assets/810c8e1a-4c26-4b14-bc48-58f8b7d997c6" />
+
+
