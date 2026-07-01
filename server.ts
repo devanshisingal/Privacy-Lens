@@ -19,7 +19,7 @@ app.use((err: any, req: express.Request, res: express.Response, next: express.Ne
   console.error("Unhandled API Error:", err);
   res.status(500).json({ error: "Internal Server Error" });
 });
-
+     
 // Configure Vite or Static Assets serving based on Environment
 async function startServer() {
   if (process.env.NODE_ENV !== "production") {
