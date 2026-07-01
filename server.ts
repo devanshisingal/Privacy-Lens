@@ -6,7 +6,7 @@ import { startPythonModelServer } from "./src/services/pythonManager";
 import { initDB } from "./src/db/sqlite";
 import apiRouter from "./src/routes/api";
 
-const app = express();
+const app = express();    
 const PORT = 3000;
 app.use(cors());
 app.use(express.json());
